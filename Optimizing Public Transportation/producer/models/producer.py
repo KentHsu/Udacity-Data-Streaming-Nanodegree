@@ -46,7 +46,7 @@ class Producer:
         self.producer = AvroProducer(
             {"bootstrap.servers": self.broker_properties["BROKER_URL"]}, 
             schema_registry=CachedSchemaRegistryClient(
-                {"url": self.broker_properties["SCHEMA_REGISTRY_URL"]}
+                {"url": self.broker_properties["SCHEMA_REGISTRY_URL"]},
             )
         )
 
@@ -60,14 +60,10 @@ class Producer:
 
         client.create_topics([topic])
 
-
-    def time_millis(self):
-        return int(round(time.time() * 1000))
-
     def close(self):
         """Prepares the producer for exit by cleaning up the producer"""
-        self.producter.flush()
-        self.producter.close()
+        self.producer.flush()
+        self.producer.close()
 
     def time_millis(self):
         """Use this function to get the key for Kafka Events"""
