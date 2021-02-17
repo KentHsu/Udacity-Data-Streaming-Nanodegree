@@ -8,7 +8,7 @@
     {"name": "direction", "type": "string"},
     {"name": "line", "type": "string"},
     {"name": "train_status", "type": "string"},
-    {"name": "prev_station_id", "type": "int"},
-    {"name": "prev_direction", "type": "string"},
+    {"name": "prev_station_id", "type": ["null", "int"]},
+    {"name": "prev_direction", "type": ["null", "string"]},
   ]
 }
