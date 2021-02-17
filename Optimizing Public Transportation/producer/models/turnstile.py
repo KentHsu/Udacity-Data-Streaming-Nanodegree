@@ -28,7 +28,7 @@ class Turnstile(Producer):
         )
 
         super().__init__(
-            f"{station_name}_turnstile",
+            f"raw_turnstile",
             key_schema=Turnstile.key_schema,
             value_schema=Turnstile.value_schema,
             num_partitions=3,
