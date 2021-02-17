@@ -1,3 +1,9 @@
 {
-  "TODO": "Complete this Schema! (Make sure to delete this Key/Value Pair!"
+  "namespace": "com.udacity",
+  "type": "record",
+  "name": "weather.key",
+  "fields": [
+    {"name": "temperature", "type": "float"},
+    {"name": "status", "type": "string"},
+  ]
 }
