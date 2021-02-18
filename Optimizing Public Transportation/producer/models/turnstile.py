@@ -19,14 +19,6 @@ class Turnstile(Producer):
 
     def __init__(self, station):
         """Create the Turnstile"""
-        station_name = (
-            station.name.lower()
-            .replace("/", "_and_")
-            .replace(" ", "_")
-            .replace("-", "_")
-            .replace("'", "")
-        )
-
         super().__init__(
             f"raw_turnstile",
             key_schema=Turnstile.key_schema,
@@ -34,9 +26,9 @@ class Turnstile(Producer):
             num_partitions=3,
             num_replicas=3,
         )
+            
         self.station = station
         self.turnstile_hardware = TurnstileHardware(station)
-        self.station_name = station_name
 
     def run(self, timestamp, time_step):
         """Simulates riders entering through the turnstile."""
@@ -49,7 +41,7 @@ class Turnstile(Producer):
                 value_schema=self.value_schema,
                 value={
                     "station_id": self.station.station_id,
-                    "station_name": self.station_name,
+                    "station_name": self.station.name,
                     "line": self.station.color.name
                 },
             )

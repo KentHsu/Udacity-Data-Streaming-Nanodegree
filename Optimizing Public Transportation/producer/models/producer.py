@@ -31,7 +31,7 @@ class Producer:
         self.num_partitions = num_partitions
         self.num_replicas = num_replicas
 
-        # Configure the broker properties below.
+        # Configure the broker properties
         self.broker_properties = {
             "BROKER_URL": "PLAINTEXT://localhost:9092",
             "SCHEMA_REGISTRY_URL": "http://localhost:8081"
@@ -52,7 +52,7 @@ class Producer:
 
     def create_topic(self):
         """Creates the producer topic if it does not already exist"""
-        client = AdminClient({"bootstrap.servers": BROKER_URL})
+        client = AdminClient({"bootstrap.servers": self.broker_properties["BROKER_URL"]})
         topic = NewTopic(self.topic_name, 
             num_partitions=self.num_partitions, 
             replication_factor=self.num_replicas,
