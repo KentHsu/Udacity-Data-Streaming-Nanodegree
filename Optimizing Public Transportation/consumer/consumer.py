@@ -65,7 +65,7 @@ class KafkaConsumer:
         """Callback for when topic assignment takes place"""
         # TODO: If the topic is configured to use `offset_earliest` set the partition offset to
         # the beginning or earliest
-        if consumer.offset_earliest
+        if consumer.offset_earliest:
             for partition in partitions:
                 partition.offset = OFFSET_BEGINNING
 

@@ -63,7 +63,6 @@ class Producer:
     def close(self):
         """Prepares the producer for exit by cleaning up the producer"""
         self.producer.flush()
-        self.producer.close()
 
     def time_millis(self):
         """Use this function to get the key for Kafka Events"""

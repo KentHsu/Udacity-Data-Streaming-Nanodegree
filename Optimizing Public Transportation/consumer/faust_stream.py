@@ -33,10 +33,10 @@ class TransformedStation(faust.Record):
 # places it into a new topic with only the necessary information.
 app = faust.App("stations-stream", broker="kafka://localhost:9092", store="memory://")
 topic = app.topic("postgres_conn_stations", value_type=Station)
-out_topic = app.topic("transformed_station", partitions=1)
+out_topic = app.topic("stations.table", partitions=1)
 table = app.Table(
-    "transformed_station",
-    default=TransformedStation,
+    "line",
+    default=str,
     partitions=1,
     changelog_topic=out_topic,
 )
@@ -47,15 +47,19 @@ table = app.Table(
 async def transform(stations):
 
     async for station in stations:
-            
-        table['station_id'] = station.station_id
-        table['station_name'] = station.station_name
-        table['order'] = station.order
+        
         table['line'] = [['blue', 'green'], 'red'][station.red][station.green]
+        
+        transformed_station = TransformedStation(
+            station_id=station.station_id,
+            station_name=station.station_name,
+            order=station.order,
+            line=table['line']
+        )
     
         await out_topic.send(
             key = table['station_id'],
-            value = table
+            value = transformed_station
         )
 
 
