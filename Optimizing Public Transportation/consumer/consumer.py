@@ -37,6 +37,7 @@ class KafkaConsumer:
                 PLAINTEXT://localhost:9094\
             ", 
             "group.id": f"{self.topic_name_pattern}",
+            "auto.offset.reset": "earliest" if offset_earliest else "latest"
         }
 
         # Create the Consumer, using the appropriate type.
