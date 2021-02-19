@@ -34,7 +34,8 @@ class Producer:
         # Configure the broker properties
         self.broker_properties = {
             "BROKER_URL": "PLAINTEXT://localhost:9092",
-            "SCHEMA_REGISTRY_URL": "http://localhost:8081"
+            "SCHEMA_REGISTRY_URL": "http://localhost:8081",
+            "group.id": f"{self.topic_name}",
         }
 
         # If the topic does not already exist, try to create it
