@@ -35,8 +35,8 @@ app = faust.App("stations-stream", broker="kafka://localhost:9092", store="memor
 topic = app.topic("postgres_conn_stations", value_type=Station)
 out_topic = app.topic("stations.table", partitions=1)
 table = app.Table(
-    "line",
-    default=str,
+    "transformed_station",
+    default=TransformedStation,
     partitions=1,
     changelog_topic=out_topic,
 )
@@ -48,19 +48,23 @@ async def transform(stations):
 
     async for station in stations:
         
-        table['line'] = [['blue', 'green'], 'red'][station.red][station.green]
-        
+        if station.red:
+            line = 'red'
+        elif station.blue:
+            line = 'blue'
+        elif station.green:
+            line = 'green'
+        else:
+            logger.debug(f"Can't parse line color with station_id = {station.station_id}")
+            line = ''
+
         transformed_station = TransformedStation(
             station_id=station.station_id,
             station_name=station.station_name,
             order=station.order,
-            line=table['line']
+            line=line
         )
-    
-        await out_topic.send(
-            key = table['station_id'],
-            value = transformed_station
-        )
+        table[station.id] = transformed_station
 
 
 if __name__ == "__main__":
