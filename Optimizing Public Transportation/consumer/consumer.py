@@ -37,11 +37,6 @@ class KafkaConsumer:
                 PLAINTEXT://localhost:9094\
             ", 
             "group.id": f"{self.topic_name_pattern}",
-            "default.topic.config": 
-                {
-                    "acks": "all", 
-                    "auto.offset.reset" : "earliest"
-                },
         }
 
         # Create the Consumer, using the appropriate type.
