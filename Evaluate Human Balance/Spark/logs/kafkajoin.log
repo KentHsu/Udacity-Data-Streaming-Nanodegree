@@ -1,0 +1,205 @@
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Dan.Staples@test.com| -5.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -5.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -3.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -2.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -3.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -2.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -2.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -3.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -4.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -2.5|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -1.0|Dan.Staples@test.com|     1960|
+|Dan.Staples@test.com| -2.0|Dan.Staples@test.com|     1960|
++--------------------+-----+--------------------+---------+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Dan.Staples@test.com| -3.0|Dan.Staples@test.com|     1960|
+|Jacob.Harris@test...| -3.5|Jacob.Harris@test...|     1937|
+|Sean.Hansen@test.com| -4.5|Sean.Hansen@test.com|     1955|
+|Bobby.Sanchez@tes...| 30.5|Bobby.Sanchez@tes...|     1964|
+|Ashley.Aristotle@...| -6.0|Ashley.Aristotle@...|     1953|
+|Larry.Habschied@t...| -1.0|Larry.Habschied@t...|     1954|
+|Trevor.Jones@test...| -2.5|Trevor.Jones@test...|     1957|
+|Senthil.Khatib@te...| -4.5|Senthil.Khatib@te...|     1956|
+| Lyn.Harris@test.com|-29.0| Lyn.Harris@test.com|     1963|
+|Danny.Abram@test.com| -3.0|Danny.Abram@test.com|     1958|
+|Chris.Clayton@tes...| 24.0|Chris.Clayton@tes...|     1961|
+|Spencer.Anandh@te...|-19.5|Spencer.Anandh@te...|     1962|
+| Dan.Khatib@test.com| -3.0| Dan.Khatib@test.com|     1959|
+|Spencer.Abram@tes...| -8.5|Spencer.Abram@tes...|     1965|
+|Sarah.Hansen@test...| -2.0|Sarah.Hansen@test...|     1952|
+|John.Howard@test.com| -7.5|John.Howard@test.com|     1940|
+|Jacob.Spencer@tes...| 10.0|Jacob.Spencer@tes...|     1938|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Chris.Sanchez@tes...|  8.0|Chris.Sanchez@tes...|     1941|
+|    Sean.Wu@test.com|-29.0|    Sean.Wu@test.com|     1949|
+|Frank.Ahmed@test.com| -2.5|Frank.Ahmed@test.com|     1951|
+|Danny.Khatib@test...|-12.5|Danny.Khatib@test...|     1945|
+|Edward.Spencer@te...|-17.5|Edward.Spencer@te...|     1948|
+|Sarah.Abram@test.com| -2.5|Sarah.Abram@test.com|     1950|
+|Sean.Aristotle@te...|-38.0|Sean.Aristotle@te...|     1947|
+| Dan.Howard@test.com|-25.5| Dan.Howard@test.com|     1946|
+|Jason.Sanchez@tes...|-14.5|Jason.Sanchez@tes...|     1942|
+|John.Howard@test.com| 22.5|John.Howard@test.com|     1940|
+|Christina.Ahmed@t...|-13.5|Christina.Ahmed@t...|     1944|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Dan.Staples@test.com| -4.5|Dan.Staples@test.com|     1960|
+|Jacob.Harris@test...|-32.0|Jacob.Harris@test...|     1937|
+|Bobby.Sanchez@tes...| -1.5|Bobby.Sanchez@tes...|     1964|
+| Lyn.Harris@test.com|  8.5| Lyn.Harris@test.com|     1963|
+|Danny.Abram@test.com| -1.5|Danny.Abram@test.com|     1958|
+|Chris.Clayton@tes...| 13.5|Chris.Clayton@tes...|     1961|
+|Spencer.Anandh@te...|  4.0|Spencer.Anandh@te...|     1962|
+| Dan.Khatib@test.com| -2.5| Dan.Khatib@test.com|     1959|
+|Spencer.Abram@tes...|  6.0|Spencer.Abram@tes...|     1965|
+|Jacob.Spencer@tes...| 23.0|Jacob.Spencer@tes...|     1938|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|    Sean.Wu@test.com|-35.0|    Sean.Wu@test.com|     1949|
+|Frank.Ahmed@test.com| -3.5|Frank.Ahmed@test.com|     1951|
+|Sean.Hansen@test.com| -4.5|Sean.Hansen@test.com|     1955|
+|Ashley.Aristotle@...| -6.0|Ashley.Aristotle@...|     1953|
+|Sarah.Abram@test.com| -4.5|Sarah.Abram@test.com|     1950|
+|Larry.Habschied@t...| -1.5|Larry.Habschied@t...|     1954|
+|Trevor.Jones@test...| -3.0|Trevor.Jones@test...|     1957|
+|Senthil.Khatib@te...| -3.5|Senthil.Khatib@te...|     1956|
+|Sarah.Hansen@test...| -1.5|Sarah.Hansen@test...|     1952|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Chris.Sanchez@tes...| 22.0|Chris.Sanchez@tes...|     1941|
+|Danny.Khatib@test...| -1.0|Danny.Khatib@test...|     1945|
+|Edward.Spencer@te...| 15.0|Edward.Spencer@te...|     1948|
+|Sean.Aristotle@te...| -7.5|Sean.Aristotle@te...|     1947|
+| Dan.Howard@test.com| -1.0| Dan.Howard@test.com|     1946|
+|Jason.Sanchez@tes...|-12.5|Jason.Sanchez@tes...|     1942|
+|John.Howard@test.com|  4.0|John.Howard@test.com|     1940|
+|Christina.Ahmed@t...|  2.5|Christina.Ahmed@t...|     1944|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 6
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Dan.Staples@test.com| -5.5|Dan.Staples@test.com|     1960|
+|Jacob.Harris@test...| -4.5|Jacob.Harris@test...|     1937|
+|Bobby.Sanchez@tes...|-20.5|Bobby.Sanchez@tes...|     1964|
+| Lyn.Harris@test.com| 16.0| Lyn.Harris@test.com|     1963|
+|Chris.Clayton@tes...|-20.0|Chris.Clayton@tes...|     1961|
+|Spencer.Anandh@te...| 15.5|Spencer.Anandh@te...|     1962|
+|Spencer.Abram@tes...|  8.5|Spencer.Abram@tes...|     1965|
+|Jacob.Spencer@tes...| 13.0|Jacob.Spencer@tes...|     1938|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 7
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Frank.Ahmed@test.com| -4.5|Frank.Ahmed@test.com|     1951|
+|Sean.Hansen@test.com| -2.5|Sean.Hansen@test.com|     1955|
+|Ashley.Aristotle@...| -4.5|Ashley.Aristotle@...|     1953|
+|Larry.Habschied@t...| -3.5|Larry.Habschied@t...|     1954|
+|Trevor.Jones@test...| -4.0|Trevor.Jones@test...|     1957|
+|Senthil.Khatib@te...| -2.0|Senthil.Khatib@te...|     1956|
+|Danny.Abram@test.com| -0.5|Danny.Abram@test.com|     1958|
+| Dan.Khatib@test.com| -1.0| Dan.Khatib@test.com|     1959|
+|Sarah.Hansen@test...| -1.5|Sarah.Hansen@test...|     1952|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 8
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|    Sean.Wu@test.com|  8.0|    Sean.Wu@test.com|     1949|
+|Danny.Khatib@test...| -4.0|Danny.Khatib@test...|     1945|
+|Edward.Spencer@te...|-11.5|Edward.Spencer@te...|     1948|
+|Sarah.Abram@test.com| -5.5|Sarah.Abram@test.com|     1950|
+|Sean.Aristotle@te...| 20.0|Sean.Aristotle@te...|     1947|
+| Dan.Howard@test.com|  1.0| Dan.Howard@test.com|     1946|
+|Jason.Sanchez@tes...| -3.0|Jason.Sanchez@tes...|     1942|
+|Christina.Ahmed@t...| 30.5|Christina.Ahmed@t...|     1944|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 9
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Chris.Sanchez@tes...|-12.0|Chris.Sanchez@tes...|     1941|
+|Jacob.Harris@test...| 15.5|Jacob.Harris@test...|     1937|
+|Bobby.Sanchez@tes...|  8.0|Bobby.Sanchez@tes...|     1964|
+| Lyn.Harris@test.com| 19.0| Lyn.Harris@test.com|     1963|
+|Spencer.Anandh@te...|-11.5|Spencer.Anandh@te...|     1962|
+|Spencer.Abram@tes...|-12.5|Spencer.Abram@tes...|     1965|
+|John.Howard@test.com| -2.5|John.Howard@test.com|     1940|
+|Jacob.Spencer@tes...|  2.5|Jacob.Spencer@tes...|     1938|
++--------------------+-----+--------------------+---------+
+
+-------------------------------------------
+Batch: 10
+-------------------------------------------
++--------------------+-----+--------------------+---------+
+|            customer|score|               email|birthYear|
++--------------------+-----+--------------------+---------+
+|Dan.Staples@test.com| -4.0|Dan.Staples@test.com|     1960|
+|Sean.Hansen@test.com| -3.0|Sean.Hansen@test.com|     1955|
+|Larry.Habschied@t...| -4.5|Larry.Habschied@t...|     1954|
+|Trevor.Jones@test...| -2.5|Trevor.Jones@test...|     1957|
+|Senthil.Khatib@te...| -0.5|Senthil.Khatib@te...|     1956|
+|Danny.Abram@test.com| -2.0|Danny.Abram@test.com|     1958|
+|Chris.Clayton@tes...|-22.0|Chris.Clayton@tes...|     1961|
+| Dan.Khatib@test.com| -1.0| Dan.Khatib@test.com|     1959|
++--------------------+-----+--------------------+---------+
+
